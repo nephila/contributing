@@ -1,3 +1,7 @@
+---
+title: Contributing
+---
+
 ## Contributing
 
 Contributions are welcome, and they are greatly appreciated! Every
@@ -43,3 +47,4 @@ If you are proposing a feature:
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions
   are welcome :)
+

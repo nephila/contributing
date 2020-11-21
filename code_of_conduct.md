@@ -1,3 +1,7 @@
+---
+title: Code of Conduct
+---
+
 ## Code of Conduct
 
 Participation in the nephila open source applications community is governed by a code of conduct.
@@ -11,16 +15,14 @@ We will not tolerate abusive behaviour or language or any form of harassment.
 
 Individuals whose behaviour is a cause for concern will be give a warning, and
 if necessary will be excluded from participation in official nephila 
-channels (email lists, IRC channels, etc) and events. The `Django Software
-Foundation <http://djangoproject.com/foundation/>`_ will also be informed of
+channels (email lists, IRC channels, etc) and events. The [Django Software
+Foundation](http://djangoproject.com/foundation/) will also be informed of
 the issue.
 
-*****************
-Raising a concern
-*****************
+### Raising a concern
 
 If you have a concern about the behaviour of any member of the python taiga
-community, please contact coc@team.nephila.digital.
+community, please contact [coc@team.nephila.digital](mailto:coc@team.nephila.digital).
 
 Your concerns will be taken seriously, treated as confidential and
 investigated. You will be informed, in writing and as promptly as possible, of
