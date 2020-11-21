@@ -1,1 +1,5 @@
-theme: jekyll-theme-slate
+theme: minima
+title: Nephila contribution guidelines
+minima:
+  skin: classic
+author: Nephila

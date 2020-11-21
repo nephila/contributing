@@ -1,0 +1,19 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+.site-header {
+    background: $header-bg-color;
+    color: $text-light-color;
+
+    .site-nav .page-link {
+        color: $text-light-color;
+    }
+}
+
+.site-title {
+    background: url("nephila_logo.png");
+    color: transparent !important;
+    display: inline-block;
+    font-size: 1px;
+    min-width: 300px;
+}

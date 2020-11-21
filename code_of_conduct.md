@@ -2,8 +2,6 @@
 title: Code of Conduct
 ---
 
-## Code of Conduct
-
 Participation in the nephila open source applications community is governed by a code of conduct.
 
 Nephila wants to ensure its open source community is a pleasant one to be involved in for everyone, and

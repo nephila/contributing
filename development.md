@@ -2,8 +2,6 @@
 title: Development & community
 ---
 
-## Development & community
-
 Nephila open source applications welcome contributions from any person, you don't need to be an expert developer to make a valuable contribution - all you need is a little
 knowledge, and a willingness to follow the contribution guidelines.
 
