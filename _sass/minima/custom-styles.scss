@@ -3,15 +3,21 @@
 
 .site-header {
     background: $header-bg-color;
+    border-top: none !important;
     color: $text-light-color;
+    padding: $spacing-unit 0;
 
     .site-nav .page-link {
+        @include media-query($on-palm) {
+            color: $blue-nephila;
+        }
         color: $text-light-color;
     }
 }
 
 .site-title {
     background: url("nephila_logo.png");
+    background-repeat: no-repeat;
     color: transparent !important;
     display: inline-block;
     font-size: 1px;
