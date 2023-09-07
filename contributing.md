@@ -98,31 +98,31 @@ If the project uses [pytest](https://pytest.org/) as test runner, you can pass a
 
 Before you submit a pull request, check that it meets these guidelines:
 
-#. Pull request must be named with the following naming scheme:
+1. Pull request must be named with the following naming scheme:
 
    `<type>/(<optional-task-type>-)<number>-description`
 
    See below for available types.
 
-#. The pull request should include tests.
-#. If the pull request adds functionality, the docs should be updated.
+2. The pull request should include tests.
+3. If the pull request adds functionality, the docs should be updated.
    Documentation must be added in `docs` directory, and must include usage
    information for the end user.
    In case of public API method, add extended docstrings with full parameters
    description and usage example.
-#. Add a changes file in `changes` directory describing the contribution in
+4. Add a changes file in `changes` directory describing the contribution in
    one line. It will be added automatically to the history file upon release.
    File must be named as `<issue-number>.<type>` with type being:
 
-   * `.feature`: For new features.
-   * `.bugfix`: For bug fixes.
-   * `.doc`: For documentation improvement.
-   * `.removal`: For deprecation or removal of public API.
-   * `.misc`: For general issues.
+    - `.feature`: For new features.
+    - `.bugfix`: For bug fixes.
+    - `.doc`: For documentation improvement.
+    - `.removal`: For deprecation or removal of public API.
+    - `.misc`: For general issues.
 
    Check [towncrier](https://pypi.org/project/towncrier/#news-fragments) documentation for more details.
 
-#. The pull request should work for all python / django / django CMS versions
+5. The pull request should work for all python / django / django CMS versions
    declared in tox.ini.
    Check the CI and make sure that the tests pass for all supported versions.
 
@@ -134,28 +134,28 @@ Please refer to the correct workflow between the two below.
 
 #### Projects that use both develop and master branches
 
-#. Update `AUTHORS.rst` file, if preset
-#. Merge `develop` on `master` branch
-#. Bump release via task: `inv tag-release (major|minor|patch)`
-#. Update changelog via towncrier: `towncrier --yes`
-#. Commit changelog with `git commit --amend` to merge with bumpversion commit
-#. Create tag `git tag <version>`
-#. Push tag to github
-#. Publish the release from the tags page
-#. If pipeline succeeds, push `master`
-#. Merge `master` back on `develop`
-#. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
-#. Push `develop`
+1. Update `AUTHORS.rst` file, if preset
+2. Merge `develop` on `master` branch
+3. Bump release via task: `inv tag-release (major|minor|patch)`
+4. Update changelog via towncrier: `towncrier --yes`
+5. Commit changelog with `git commit --amend` to merge with bumpversion commit
+6. Create tag `git tag <version>`
+7. Push tag to github
+8. Publish the release from the tags page
+9. If pipeline succeeds, push `master`
+10. Merge `master` back on `develop`
+11. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
+12. Push `develop`
 
 #### Projects that use only develop or master branch
 
-#. Update `AUTHORS.rst` file, if preset
-#. Bump release via task: `inv tag-release (major|minor|patch)`
-#. Update changelog via towncrier: `towncrier --yes`
-#. Commit changelog with `git commit --amend` to merge with bumpversion commit
-#. Create tag `git tag <version>`
-#. Push tag to github
-#. Publish the release from the tags page
-#. If pipeline succeeds, push the project main branch (`master` or `develop`)
-#. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
-#. Push the project main branch (`master` or `develop`)
+1. Update `AUTHORS.rst` file, if preset
+2. Bump release via task: `inv tag-release (major|minor|patch)`
+3. Update changelog via towncrier: `towncrier --yes`
+4. Commit changelog with `git commit --amend` to merge with bumpversion commit
+5. Create tag `git tag <version>`
+6. Push tag to github
+7. Publish the release from the tags page
+8. If pipeline succeeds, push the project main branch (`master` or `develop`)
+9. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
+10. Push the project main branch (`master` or `develop`)
