@@ -120,7 +120,7 @@ Before you submit a pull request, check that it meets these guidelines:
    * `.removal`: For deprecation or removal of public API.
    * `.misc`: For general issues.
 
-   Check `towncrier`_ documentation for more details.
+   Check [towncrier](https://pypi.org/project/towncrier/#news-fragments) documentation for more details.
 
 #. The pull request should work for all python / django / django CMS versions
    declared in tox.ini.
