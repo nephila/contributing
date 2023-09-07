@@ -48,7 +48,7 @@ If you are proposing a feature:
 
 #### Add Translations
 
-All translations are handled by `transifex <https://app.transifex.com/nephila/>`_.
+All translations are handled by [transifex](https://app.transifex.com/nephila/>).
 
 If you want to contribute on translations, request an access to our `transifex` team and we'll add you
 as soon as possible.
@@ -60,10 +60,10 @@ to set up your environment for local development.
 
 We use, for most projects, this set of packages:
 
-- `bumpversion`_
-- `towncrier`_
-- `invoke`_
-- `tox`_
+- [bumpversion](https://pypi.org/project/bump2version/)
+- [towncrier](https://pypi.org/project/towncrier/#news-fragments)
+- [invoke](https://pypi.org/project/invoke/)
+- [tox](https://pypi.org/project/tox/)
 
 You may want to install them in the global environment::
 
@@ -71,11 +71,11 @@ You may want to install them in the global environment::
 
 #### Development tips
 
-Most of the projects allows you to use `pre-commit <https://pre-commit.com/>`_ to ensure an easy compliance
+Most of the projects allows you to use [pre-commit](https://pre-commit.com/) to ensure an easy compliance
 to the project code styles.
 
-If you want to use it, install it globally (for example with `pip3 install --user precommit`,
-but check `installation instruction <https://pre-commit.com/#install>`_.
+If you want to use it, install it globally (for example with `pip3 install --user pre-commit`,
+but check [installation instruction](https://pre-commit.com/#install>).
 When first cloning the project ensure you install the git hooks by running `pre-commit install`.
 
 From now on every commit will be checked against our code style.
@@ -89,7 +89,7 @@ You can test your project using any specific combination of python, django and d
 
 For example `tox -epy39-django32-cms39` runs the tests on python 3.7, Django 3.0 and django CMS 3.7.
 
-If the project uses `pytest <https://pytest.org/>`_ as test runner, you can pass any pytest option by setting the
+If the project uses [pytest](https://pytest.org/) as test runner, you can pass any pytest option by setting the
 `PYTEST_ARGS` environment variable, usually by prepending to the `tox` command. Example::
 
     PYTEST_ARGS=" -s  tests/test_plugins.py::PluginTest -p no:warnings" tox -epy37-django30-cms37
@@ -159,8 +159,3 @@ Please refer to the correct workflow between the two below.
 #. If pipeline succeeds, push the project main branch (`master` or `develop`)
 #. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
 #. Push the project main branch (`master` or `develop`)
-
-.. _towncrier: https://pypi.org/project/towncrier/#news-fragments
-.. _bumpversion: https://pypi.org/project/bump2version/
-.. _invoke: https://pypi.org/project/invoke/
-.. _tox: https://pypi.org/project/tox/
