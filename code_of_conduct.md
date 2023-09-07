@@ -12,7 +12,7 @@ person, and to be welcoming, friendly and polite.
 We will not tolerate abusive behaviour or language or any form of harassment.
 
 Individuals whose behaviour is a cause for concern will be give a warning, and
-if necessary will be excluded from participation in official nephila 
+if necessary will be excluded from participation in official nephila
 channels (email lists, IRC channels, etc) and events. The [Django Software
 Foundation](http://djangoproject.com/foundation/) will also be informed of
 the issue.

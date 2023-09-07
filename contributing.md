@@ -56,7 +56,7 @@ as soon as possible.
 ### Get Started!
 
 Ready to contribute? Refer to the project `Get Started!` section of `CONTRIBUTING.rst`
-to set up your environment for local development. 
+to set up your environment for local development.
 
 We use, for most projects, this set of packages:
 
@@ -128,7 +128,7 @@ Before you submit a pull request, check that it meets these guidelines:
 
 ### Release a version
 
-Some projects use both `develop` and `master` branches (where `develop` is used for development releases, 
+Some projects use both `develop` and `master` branches (where `develop` is used for development releases,
 and `master` for official releases), other projects use only one branch (`develop` or `master`).
 Please refer to the correct workflow between the two below.
 
@@ -145,7 +145,7 @@ Please refer to the correct workflow between the two below.
 #. If pipeline succeeds, push `master`
 #. Merge `master` back on `develop`
 #. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
-#. Push `develop` 
+#. Push `develop`
 
 #### Projects that use only develop or master branch
 
