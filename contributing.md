@@ -74,14 +74,14 @@ You may want to install them in the global environment::
 Most of the projects allows you to use [pre-commit](https://pre-commit.com/) to ensure an easy compliance
 to the project code styles.
 
-If you want to use it, install it globally (for example with `pip3 install --user pre-commit`,
+If you want to use it, install it globally (for example with `pip3 install --user pre-commit`),
 but check [installation instruction](https://pre-commit.com/#install>).
 When first cloning the project ensure you install the git hooks by running `pre-commit install`.
 
 From now on every commit will be checked against our code style.
 
 Check also the available tox environments with `tox -l`: the ones not marked with a python version number are tools
-to help you work on the project buy checking / formatting code style, running docs etc.
+to help you work on the project by checking / formatting code style, running docs etc.
 
 #### Testing tips
 
@@ -134,7 +134,7 @@ Please refer to the correct workflow between the two below.
 
 #### Projects that use both develop and master branches
 
-1. Update `AUTHORS.rst` file, if preset
+1. Update `AUTHORS.rst` file, if present
 2. Merge `develop` on `master` branch
 3. Bump release via task: `inv tag-release (major|minor|patch)`
 4. Update changelog via towncrier: `towncrier --yes`
@@ -149,7 +149,7 @@ Please refer to the correct workflow between the two below.
 
 #### Projects that use only develop or master branch
 
-1. Update `AUTHORS.rst` file, if preset
+1. Update `AUTHORS.rst` file, if present
 2. Bump release via task: `inv tag-release (major|minor|patch)`
 3. Update changelog via towncrier: `towncrier --yes`
 4. Commit changelog with `git commit --amend` to merge with bumpversion commit
