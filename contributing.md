@@ -60,7 +60,7 @@ to set up your environment for local development.
 
 We use, for most projects, this set of packages:
 
-- [bumpversion](https://pypi.org/project/bump2version/)
+- [bump-my-version](https://pypi.org/project/bump-my-version/)
 - [towncrier](https://pypi.org/project/towncrier/#news-fragments)
 - [invoke](https://pypi.org/project/invoke/)
 - [tox](https://pypi.org/project/tox/)
@@ -136,15 +136,15 @@ Please refer to the correct workflow between the two below.
 
 1. Update `AUTHORS.rst` file, if present
 2. Merge `develop` on `master` branch
-3. Bump release via task: `inv tag-release (major|minor|patch)`
+3. Bump release via task: `inv tag-release --level=(major|minor|patch)`
 4. Update changelog via towncrier: `towncrier --yes`
-5. Commit changelog with `git commit --amend` to merge with bumpversion commit
+5. Commit changelog with `git commit --amend` to merge with bump-my-version commit
 6. Create tag `git tag <version>`
 7. Push tag to github
 8. Publish the release from the tags page
 9. If pipeline succeeds, push `master`
 10. Merge `master` back on `develop`
-11. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
+11. Bump developement version via task: `inv tag-dev --level=(major|minor|patch)`
 12. Push `develop`
 
 #### Projects that use only develop or master branch
@@ -159,3 +159,5 @@ Please refer to the correct workflow between the two below.
 8. If pipeline succeeds, push the project main branch (`master` or `develop`)
 9. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
 10. Push the project main branch (`master` or `develop`)
+
+To increment dev version use `inv tag-dev --level=relver` (e.g. to pass from `1.2.0.dev1` to `1.2.0.dev2`)
