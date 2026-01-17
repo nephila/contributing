@@ -144,20 +144,20 @@ Please refer to the correct workflow between the two below.
 8. Publish the release from the tags page
 9. If pipeline succeeds, push `master`
 10. Merge `master` back on `develop`
-11. Bump developement version via task: `inv tag-dev --level=(major|minor|patch)`
+11. Bump developement version via task: `inv tag-dev --level=release`
 12. Push `develop`
 
 #### Projects that use only develop or master branch
 
 1. Update `AUTHORS.rst` file, if present
-2. Bump release via task: `inv tag-release (major|minor|patch)`
+2. Bump release via task: `inv tag-release --level=(major|minor|patch)`
 3. Update changelog via towncrier: `towncrier --yes`
 4. Commit changelog with `git commit --amend` to merge with bumpversion commit
 5. Create tag `git tag <version>`
 6. Push tag to github
 7. Publish the release from the tags page
 8. If pipeline succeeds, push the project main branch (`master` or `develop`)
-9. Bump developement version via task: `inv tag-dev -l (major|minor|patch)`
+9. Bump developement version via task: `inv tag-dev --level=release`
 10. Push the project main branch (`master` or `develop`)
 
 To increment dev version use `inv tag-dev --level=relver` (e.g. to pass from `1.2.0.dev1` to `1.2.0.dev2`)
